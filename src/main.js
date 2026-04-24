@@ -7,6 +7,7 @@ import HomeView from './views/HomeView.vue'
 import PhaseView from './views/PhaseView.vue'
 import DayView from './views/DayView.vue'
 import RecipesView from './views/RecipesView.vue'
+import ShoppingView from './views/ShoppingView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -15,6 +16,7 @@ const router = createRouter({
     { path: '/phase/:id', component: PhaseView },
     { path: '/day/:id', component: DayView },
     { path: '/recipes', component: RecipesView },
+    { path: '/shopping', component: ShoppingView },
   ],
   scrollBehavior: () => ({ top: 0 })
 })

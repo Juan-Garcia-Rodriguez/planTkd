@@ -17,6 +17,9 @@
       <RouterLink to="/recipes" class="nl" active-class="nl-active">
         <span class="ni">🍽️</span><span class="nt">Recettes</span>
       </RouterLink>
+      <RouterLink to="/shopping" class="nl" active-class="nl-active">
+        <span class="ni">🛒</span><span class="nt">Courses</span>
+      </RouterLink>
     </div>
   </nav>
   <main>
