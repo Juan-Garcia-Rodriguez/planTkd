@@ -52,10 +52,10 @@
 </template>
 <script setup>
 import { ref, watch } from 'vue'
-const props = defineProps({ show: Boolean, recipe: Object, color: { default: 'red' } })
+const props = defineProps({ show: Boolean, recipe: Object, color: { default: 'red' }, defaultN: { default: 1 } })
 defineEmits(['close'])
 const n = ref(1)
-watch(() => props.show, v => { if(v) n.value=1 })
+watch(() => props.show, v => { if(v) n.value = props.defaultN })
 function fq(v){ return v%1===0?v:Math.round(v*10)/10 }
 </script>
 <style scoped>
