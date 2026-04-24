@@ -14,11 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
-          cache: npm
-
       - run: npm ci
 
       - run: npm run build
@@ -33,5 +28,5 @@ jobs:
           git init
           git checkout -b gh-pages
           git add -A
-          git commit -m "Deploy $(date)"
+          git commit -m "Deploy"
           git push -f https://x-access-token:${GITHUB_TOKEN}@github.com/Juan-Garcia-Rodriguez/planTkd.git gh-pages
